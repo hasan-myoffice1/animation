@@ -1,0 +1,96 @@
+/* ===== || Div Down-Up Animation ||======= */
+
+.down-up-ani {
+    animation: downUp 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    padding: 30px;
+}
+
+@keyframes downUp {
+    0% { top: -1000px; }
+
+    50% { top: 100px;}
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+/* ===== || Div Up to Down Animation ||======= */
+.up-down-ani {
+    animation: upDown 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    padding: 30px;
+}
+
+@keyframes upDown {
+    0% { top: 0px; }
+
+    50% { top: 200px;}
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* ===== || Div Left to Right Animation ||======= */
+.left-right-ani {
+    animation: leftRight 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    padding: 30px;
+}
+
+@keyframes leftRight {
+    0% { 
+       top: 0px;
+       left: 0px; 
+    }
+
+    50% { left: 200px;}
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+/* ===== || Div Opacity 0 to 1 Animation ||======= */
+.opa-0-1{
+    animation: opa-0-1 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    padding: 30px;
+}
+@keyframes opa-0-1 {
+    0% { opacity: 0; }
+
+    50% { opacity: 0.5;  }
+
+    100% { opacity: 1; }
+}
+
+/* ===== || Div White-Hight 0 to 1 Animation ||======= */
+.white-hight-ani{
+    animation: whiteHightAni  2s;
+    animation-iteration-count: 1;
+    position: relative;
+    padding: 30px;
+}
+@keyframes whiteHightAni  {
+    0% { 
+        opacity: 0; 
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {  
+        opacity: 1;
+        width: 500px;
+        height: 200px;
+     }
+}

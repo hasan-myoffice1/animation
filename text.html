@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .container{
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .p{
+            animation: divAni 2.2s;
+            position: relative;
+            padding: 30px;
+            /* animation-iteration-count:infinite; */
+        }
+        
+        #div1 {
+            width: 500px;
+            height: 200px;
+            border-radius: 9px;
+            background-color: aqua;
+            padding: 30px;
+        }
+        .div2 {
+            width: 500px;
+            height: 200px;
+            border-radius: 9px;
+            background-color: aqua;
+           
+        }
+
+        .opa{
+            animation: opa 2s;
+            animation-iteration-count: 1;
+            position: relative;
+            padding: 30px;
+        }
+
+        .divani{
+            animation: divAni 2s;
+            animation-iteration-count: 1;
+            position: relative;
+            padding: 30px;
+        }
+
+        @keyframes divAni {
+            0% {
+                /* background-color: red; */
+                /* left: 0px; */
+                top: -1000px;
+            }
+
+            50% {
+                /* background-color: blue; */
+                /* left: 500px; */
+                top: 100px;
+            }
+
+            100% {
+                /* background-color: red; */
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes opa {
+            0% {               
+                 opacity: 0;
+                 width: 0;
+                 height: 0;
+            }
+
+            50% {             
+                opacity: 0.5; 
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+     <div class="container">
+        <div id="div1"> 
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laudantium at provident corrupti qui ab impedit placeat quam temporibus officiis libero molestiae repudiandae consequatur dolore nobis officia facere voluptatum sit!</p>
+    
+            
+        </div>
+        
+        <div class="div2" id="div2">
+            
+        </div>
+    </div>
+    <footer>
+
+        <button id="down-up">down-up</button>
+        <script>
+          let down_up =   document.getElementById('down-up');
+          
+          down_up.addEventListener('click', function() {
+              let div = document.getElementById('div1');
+              div.classList.toggle('divani')
+          })
+        </script>
+
+        <button id="opa">opa</button>
+        <script>
+          let opa = document.getElementById('opa');
+          
+          opa.addEventListener('click', function() {
+              let div = document.getElementById('div2');
+              div.classList.add('opa')
+          })
+        </script>
+
+
+        <button id="test">Test</button>
+        <script>
+          let test = document.getElementById('test');
+          
+          test.addEventListener('click', function() {
+              let div = document.getElementById('div2');
+            //   div.style.backgroundColor = "red";
+              div.style.animation = "opa";
+          })
+        </script>
+
+    </footer>
+</body>
+
+</html>

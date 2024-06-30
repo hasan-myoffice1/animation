@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.12rem;
+    /* color: aliceblue; */
+}
+body{
+    background-color: rgba(0, 0, 0, 0.719);    
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 70%;
+    height: auto;
+    /* background-color: rgba(0, 0, 0, 0.11); */
+}
+.row{
+    width: 100%;
+    /* min-height: 500px; */
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.11);
+    margin-top: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+div{
+    margin: 10px ;
+}
+.animation-div {
+    width: 500px;
+    height: 200px;
+    border-radius: 9px;
+    background-color: aqua;
+    padding: 30px;
+}
+
+.align{
+    width: 500px;
+    height: 200px;
+    border-radius: 9px;
+    /* background-color: aqua; */
+    border: 1px solid aqua;
+    padding: 30px;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: baseline; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* align-content: baseline; */
+    /* align-self: center; */
+    
+     
+}
+
+.justify{
+    width: 500px;
+    height: 200px;
+    border-radius: 9px;
+    /* background-color: aqua; */
+    border: 1px solid aqua;
+    padding: 30px;
+    display: flex;
+    justify-content: baseline;
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: first baseline; */
+    /* justify-content: right; */
+    /* justify-content: flex-end; */
+    /* justify-content: last baseline; */
+    /* justify-content: safe; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+}
+
+.align .div{
+    width: 50px;
+    height: 30px;
+    background-color: aqua;
+}
+.justify .div{
+    width: 50px;
+    height: 30px;
+    background-color: aqua;
+}
+
